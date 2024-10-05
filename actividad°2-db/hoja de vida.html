@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hoja de Vida - Luis Antonio Bautista Cogollo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Bootstrap CSS-->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        
+        <style>
+            /* Controla el espacio de los parrafos y el fondo de la Página Web */
+            body {
+                font-family: Arial, sans-serif;
+                line-height: 1.5;
+                background-color: lightblue;
+                color: black;
+                scroll-behavior: smooth; /* Habilita desplazamiento suave */
+            }
+
+            /* Controla la parte superior (head) de la Página Web */
+            header {
+                background: black;
+                color: white;
+                padding: 10px 0;
+                text-align: center;
+                position: sticky;
+                top: 0;
+                z-index: 1000;
+                line-height: 1.5;
+            }
+
+            header h1 {
+                margin: 0;
+                font-size: 2.5em;
+            }
+
+            /* Controla el interineado de los items */
+            ul {
+                padding-left: 20px;
+                line-height: 1.5;
+            }
+
+            nav ul {
+                list-style: none;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+                margin: 0 15px;
+            }
+
+            /* Controla el fondo de la head */
+            nav ul li a {
+                color: white;
+                text-decoration: none;
+            }
+
+            /* Controla el color de las letras de los botones y el menu de navegacion */
+            nav ul li a:hover, nav ul li a.active {
+                background-color: lightslategrey;
+                padding: 5px 10px;
+                border-radius: 5px;
+                color: white;
+                transition: background-color 0.3s ease;
+            }
+
+            /* Controla el contorno de los botones */
+            nav ul li a.active {
+                background-color: lightslategrey;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+            /* Controla las diferentes secciones de la Página Web*/
+            section {
+                margin: 20px auto;
+                padding: 20px;
+                max-width: 1200px;
+                background: white;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            /* Controla el espacio para que no quede tapado por el header fijo */
+            section[id] {
+                scroll-margin-top: 70px;
+            }
+
+            /* Controla el color y tamaño de las letras de la parte superior de cada sesión */
+            h2 {
+                font-size: 1.5em;
+                color: black;
+            }
+
+            #contacto, #perfil {
+                display: flow-root;
+                align-items: center;
+
+            }
+
+            /* Controla la posición de las imagenes en la seccion de los contactos */
+            #contacto img {
+                max-width: 30%; 
+                border-radius: 10px;
+                margin-left: 20px;
+                margin-bottom: 20px; 
+                float: left;
+            }
+
+            /* Controla la posición de las imagenes en la seccion de los perfiles */
+            #perfil img {
+                max-width: 30%; 
+                border-radius: 10px;
+                margin-left: 20px;
+                margin-bottom: 20px; 
+                float: right;
+            }
+
+            /* Controla el interlineado de los items de las habilidades*/
+            #habilidades ul {
+                line-height: 0.5;
+            }
+
+        </style>
+    </head>
+
+    <body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+        <header>
+            <h1> Luis Antonio Bautista Cogollo </h1>
+        </header>
+
+        <!-- Menú de Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#perfil">Perfil Profesional</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#experiencia">Experiencia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#educacion1">Educación</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#idiomas">Idiomas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#formulario">Formulario de Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <section id="contacto">
+            <h2>Información de Contacto</h2>
+            <p><strong>Ciudad: </strong>San Bernardo del Viento, Córdoba</p>
+            <p><strong>Teléfono: </strong> +57 3008103123 / +57 3243084401</p>
+            <p><a href="mailto:bautistaluisantonio24@gmail.com"><img src="img/gmail.svg" alt="Imagen de Gmail"></a></p>
+            <p><a href="https://www.linkedin.com/in/luis-bautista-desarrollador-back-end"><img src="img/lin.svg" alt="Imagen de LinkedIn"></a></p>
+            <p><a href="https://github.com/Luisbautista01"><img src="img/github.svg" alt="Imagen de GitHub"></a></p>
+        </section>
+
+        <section id="perfil">
+            <h2>Perfil Profesional</h2>
+            <img src="img/desarrollador.jpg" alt="Desarrollador Web">
+                <p>
+                    Estudiante de Ingeniería de Software y Programador web backend bilingüe (Inglés B1), con experiencia en el 
+                    desarrollo de aplicaciones robustas y eficientes. Me especializo en tecnologías como Java, manejo de bases de 
+                    datos relacionales y no relacionales tales como MySQL y MongoDB, uso de plataformas de Git/Github que me 
+                    han permitido almacenar, administrar y gestionar códigos fuentes en la nube. Mi compromiso con la excelencia 
+                    técnica se relaciona con una actitud amable y colaborativa, lo que me ha ayudado a trabajar en equipos de 
+                    forma satisfactoria. Todo esto lo he implementado gradualmente en proyectos, en donde he utilizado conceptos 
+                    como la integración y despliegue continuo, Swagger, JWT,principios SOLID, POO y patrones de diseño
+                </p>
+        </section>
+
+        <section id="experiencia">
+            <h2>Experiencia Laboral</h2>
+        
+            <h3>BeTek - Desarrollador Web Backend (Trainee)</h3>
+            <p><strong>Período: </strong>02/24 - 07/24</p>
+        
+            <button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#responsabilidades" aria-expanded="false" aria-controls="responsabilidades">
+                Ver Responsabilidades
+            </button>
+            <div class="collapse" id="responsabilidades">
+                <h4>Responsabilidades:</h4>
+                <ul>
+                    <li>Aplicar tecnologías como Java para el desarrollo de aplicaciones web implementando el uso de principios SOLID y POO para mejorar la calidad y mantenibilidad del código.</li>
+                    <li>Emplear pruebas unitarias para asegurar el buen funcionamiento de las responsabilidades del código.</li>
+                    <li>Administrar base de datos relacionales y no relacionales como MySQL y mongoDB.</li>
+                    <li>Gestionar códigos fuentes, colaborando y administrando proyectos a través del uso de plataformas como Git/GitHub.</li>
+                    <li>Implementar la integración y despliegue continuo a proyectos y así prevenir errores en el código fuente, asegurando que estos estén listos para ser incorporados a producción.</li>
+                </ul>
+            </div>
+        
+            <button class="btn btn-primary mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#logros" aria-expanded="false" aria-controls="logros">
+                Ver Logros
+            </button>
+            <div class="collapse" id="logros">
+                <h4>Logros:</h4>
+                <ul>
+                    <li>Desarrollé e implementé la lógica del Backend para el registro de usuarios en “Titan Gym”, incluyendo la creación de funcionalidades y la integración de las bases de datos.</li>
+                    <li>Participé en el desarrollo de diferentes proyectos prácticos que me permitieron adquirir mayor habilidad en el uso de diferentes tecnologías, asegurando que se cumplieran los requerimientos de cada proyecto.</li>
+                    <li>Realicé proyectos en los que pude lograr un código limpio y escalable además de intuitivo y resumido, con POO, SOLID y patrones de diseño.</li>
+                    <li>Colaboré en equipos de trabajo, que integraban códigos a repositorios en GitHub, en los cuales implementé Swagger y JWT.</li>
+                </ul>
+            </div>
+        </section>        
+
+        <section id="educacion1">
+            <h2>Educación Profesional</h2>
+            <ul> 
+                <li>Web Backend Developer, BeTek (2024).</li>
+                <li>Ingeniería de Software, Universidad de Cartagena (2022 - Actualmente).</li>
+            </ul>
+        </section>
+
+        <section id="educacion2">
+            <h2>Educación Complementaria</h2>
+            <ul> 
+                <li>Introducción a la programación, Fundaula (2024).</li>
+                <li>Introducción a Java, Coursera (2024).</li>
+                <li>Fundamentos de programación, BeTek (2024).</li>
+                <li>Semillero STEM, Ecopetrol (2023).</li>
+            </ul>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul> 
+                <li><strong>Técnicas: </strong>Java, MySQL, Git/GitHub, Programación Orientada a Objetos (POO), principios SOLID, Swagger, JWT.</p>
+                <li><strong>Blandas: </strong>Trabajo en equipo, comunicación efectiva, Resolución de problemas.</li>
+            </ul>
+        </section>
+
+        <section id="idiomas">
+            <h2>Idiomas</h2>
+            <ul> 
+                <li>Español - Nativo.</li>
+                <li>Inglés Avanzado - B1.</li>
+            </ul>
+        </section>
+        
+        <!-- Formulario de Contacto -->
+        <section id="formulario" class="container mt-5">
+            <h2>Formulario de Contacto</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" required>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Validación de Formulario con jQuery -->
+        <script>
+            $(document).ready(function() {
+                $('#contactForm').on('submit', function(e) {
+
+                    e.preventDefault(); // evita el envio real del formulario
+
+                    let nombre = $('#nombre').val();
+                    let email = $('#email').val();
+                    let mensaje = $('#mensaje').val();
+
+                    if (nombre === '' || email === '' || mensaje === '') {
+                        alert('Por favor, completa todos los campos.');
+                        return;
+                    } else if (!validateEmail(email)) {
+                        alert('Ingresa un correo electrónico válido.');
+                    } else {
+                        alert('Formulario enviado exitosamente.');
+                    }
+                });
+
+                function validateEmail(email) {
+                    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    return regex.test(email);
+                }
+            });
+        </script>
+
+        <script>
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 100) {
+                    $('#ir-arriba').fadeIn();
+                } else {
+                    $('#ir-arriba').fadeOut();
+                }
+            });
+        </script>
+
+        <script src="js/bootstrap.min.js"></script>
+
+        <footer class="text-center p-4 mt-5" style="background-color: #000; color: #fff;">
+            <p>&copy; 2024 Luis Antonio Bautista Cogollo. Todos los derechos reservados.</p>
+        </footer>
+
+    </body>
+</html>
+
+
